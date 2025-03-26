@@ -1,0 +1,124 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header .logo {
+    font-size: 1.8em;
+    margin-left: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #f6a500;
+    transition: all 0.3s ease-in-out;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Animations */
+.intro h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-out;
+}
+
+.intro p {
+    font-size: 1.2em;
+    animation: fadeIn 3s ease-out;
+}
+
+/* Event Cards */
+.event-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.event-card:hover {
+    transform: scale(1.05);
+}
+
+.event-card h3 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+}
+
+/* Register Form */
+.register-form input,
+.register-form button {
+    padding: 10px;
+    margin: 10px;
+    font-size: 1em;
+    width: 250px;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+}
+
+.register-form button {
+    background-color: #f6a500;
+    color: #fff;
+    cursor: pointer;
+}
+
+.register-form button:hover {
+    background-color: #d58c00;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+/* Keyframes for Animation */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
